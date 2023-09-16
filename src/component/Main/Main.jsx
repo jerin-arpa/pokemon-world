@@ -2,16 +2,24 @@ import { useEffect } from "react";
 import Header from "../Header/Header";
 import { useState } from "react";
 import { FaCrown } from 'react-icons/fa';
+import Cart from "../Cart/Cart";
 
 const Main = () => {
 
     const [allPokemon, setAllPokemon] = useState([]);
+    const [selectedPokemon, setSelectedPokemon] = useState([]);
 
     useEffect(() => {
         fetch('./data.json')
             .then(res => res.json())
             .then(data => setAllPokemon(data));
     }, []);
+
+
+    const handleAddToCart = (pokemon) => {
+        const newPokemon = ([...selectedPokemon, pokemon]);
+        setSelectedPokemon(newPokemon);
+    }
 
 
     return (
@@ -21,20 +29,10 @@ const Main = () => {
             </header>
             <main className="container mx-auto my-8">
                 {/* container */}
-                <div className="flex flex-col md:flex-col lg:flex-row gap-5">
+                <div className="flex flex-col md:flex-col lg:flex-row gap-5 px-3">
                     {/* cart container */}
-                    <div className="w-full md:w-full lg:w-1/5 bg-slate-100">
-                        <div className="flex">
-                            <img className="w-10 mr-2" src="/src/assets/images/pokeball.png" alt="" />
-                            <h3 className="text-xl font-bold">
-                                Pokemons Cart
-                            </h3>
-                        </div>
-
-                        <div>
-                            <p className="font-bold">Total Cards picked: </p>
-                            <p className="font-bold">Total Spending: </p>
-                        </div>
+                    <div className="w-full md:w-full lg:w-1/5">
+                        <Cart selectedPokemon={selectedPokemon}></Cart>
                     </div>
 
 
@@ -52,7 +50,9 @@ const Main = () => {
                                         <p className="font-bold text-lg">Hp: {pokemon.hp}</p>
                                     </div>
 
-                                    <p><span className="font-bold">Ability:</span><span className="font-light"> {pokemon.ability}</span></p>
+                                    <p className="h-20">
+                                        <span className="font-bold">Ability:</span><span className="font-light"> {pokemon.ability}</span>
+                                    </p>
 
                                     <div className="flex">
                                         <p className="font-bold">Power:</p>
@@ -63,8 +63,8 @@ const Main = () => {
 
                                     <p className="font-bold">Price: ${pokemon.price}</p>
 
-                                    <div className="flex">
-                                        <button className="btn"><FaCrown className="text-yellow-500 text-lg"></FaCrown> Add to cart</button>
+                                    <div className="flex justify-center">
+                                        <button onClick={() => handleAddToCart(pokemon)} className="btn  bg-yellow-500 border-none"><FaCrown className="text-lg"></FaCrown> Add to cart</button>
                                     </div>
                                 </div>
                             ))
