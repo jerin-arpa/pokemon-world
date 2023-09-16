@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import { useState } from "react";
 import { FaCrown } from 'react-icons/fa';
 import Cart from "../Cart/Cart";
+import Swal from 'sweetalert2'
 
 const Main = () => {
 
@@ -22,7 +23,12 @@ const Main = () => {
         const isExist = selectedPokemon.find(item => item.id === pokemon.id);
 
         if (isExist) {
-            return alert('Item already taken');
+            return Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'This item is already taken!',
+                footer: '<a href="">Please ! Add another one</a>'
+            })
         }
         else {
             const newPokemon = ([...selectedPokemon, pokemon]);
