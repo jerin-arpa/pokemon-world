@@ -7,7 +7,7 @@
         "creator": "Ryota Murayama",
         "price": 23.5,
         "power": 100,
-        "url": "./images/image-1.jpg"
+        "url": "/src/assets/images/image-1.jpg"
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@
         "creator": "Atsushi Furusawa",
         "price": 7,
         "power": 55,
-        "url": "./images/image-2.jpg"
+        "url": "/src/assets/images/image-2.jpg"
     },
     {
         "id": 3,
@@ -27,7 +27,7 @@
         "creator": "Shizurowa",
         "price": 10.5,
         "power": 78,
-        "url": "./images/image-3.jpg"
+        "url": "/src/assets/images/image-3.jpg"
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@
         "creator": "5ban Graphics",
         "price": 9,
         "power": 73,
-        "url": "./images/image-4.jpg"
+        "url": "/src/assets/images/image-4.jpg"
     },
     {
         "id": 5,
@@ -47,7 +47,7 @@
         "creator": "Kouki Saitou",
         "price": 8.5,
         "power": 66,
-        "url": "./images/image-5.jpg"
+        "url": "/src/assets/images/image-5.jpg"
     },
     {
         "id": 6,
@@ -57,7 +57,7 @@
         "creator": "Midori Harada",
         "price": 12.5,
         "power": 74,
-        "url": "./images/image-6.jpg"
+        "url": "/src/assets/images/image-6.jpg"
     },
     {
         "id": 7,
@@ -67,7 +67,7 @@
         "creator": "kirisAki",
         "price": 8,
         "power": 70,
-        "url": "./images/image-7.jpg"
+        "url": "/src/assets/images/image-7.jpg"
     },
     {
         "id": 8,
@@ -77,7 +77,7 @@
         "creator": "Naoki Saito",
         "price": 8.5,
         "power": 72,
-        "url": "./images/image-8.jpg"
+        "url": "/src/assets/images/image-8.jpg"
     },
     {
         "id": 9,
@@ -87,7 +87,7 @@
         "creator": "PLANETA Mochizuki",
         "price": 25,
         "power": 100,
-        "url": "./images/image-9.jpg"
+        "url": "/src/assets/images/image-9.jpg"
     },
     {
         "id": 10,
@@ -97,7 +97,7 @@
         "creator": "Naoki Saito",
         "price": 7.5,
         "power": 68,
-        "url": "./images/image-10.jpg"
+        "url": "/src/assets/images/image-10.jpg"
     },
     {
         "id": 11,
@@ -107,7 +107,7 @@
         "creator": "You Iribi",
         "price": 9,
         "power": 70,
-        "url": "./images/image-11.jpg"
+        "url": "/src/assets/images/image-11.jpg"
     },
     {
         "id": 12,
@@ -117,7 +117,7 @@
         "creator": "Ayaka Yoshida",
         "price": 17.5,
         "power": 88,
-        "url": "./images/image-12.jpg"
+        "url": "/src/assets/images//image-12.jpg"
     },
     {
         "id": 13,
@@ -127,7 +127,7 @@
         "creator": "5ban Graphics",
         "price": 5,
         "power": 35,
-        "url": "./images/image-13.jpg"
+        "url": "/src/assets/images/image-13.jpg"
     },
     {
         "id": 14,
@@ -137,7 +137,7 @@
         "creator": "5ban Graphics",
         "price": 11.5,
         "power": 62,
-        "url": "./images/image-14.jpg"
+        "url": "/src/assets/images//image-14.jpg"
     },
     {
         "id": 15,
@@ -147,7 +147,7 @@
         "creator": "Atsuko Nishida",
         "price": 4,
         "power": 30,
-        "url": "./images/image-15.jpg"
+        "url": "/src/assets/images/image-15.jpg"
     },
     {
         "id": 16,
@@ -157,7 +157,7 @@
         "creator": "5ban Graphics",
         "price": 13,
         "power": 85,
-        "url": "./images/image-16.jpg"
+        "url": "/src/assets/images/image-16.jpg"
     },
     {
         "id": 17,
@@ -167,7 +167,7 @@
         "creator": "Eske Yoshinob",
         "price": 16,
         "power": 92,
-        "url": "./images/image-17.jpg"
+        "url": "/src/assets/images/image-17.jpg"
     },
     {
         "id": 18,
@@ -177,6 +177,6 @@
         "creator": "5ban Graphics",
         "price": 21.5,
         "power": 100,
-        "url": "./images/image-18.jpg"
+        "url": "/src/assets/images/image-18.jpg"
     }
 ]
