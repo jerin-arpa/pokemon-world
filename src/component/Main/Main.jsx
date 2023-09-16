@@ -8,6 +8,8 @@ const Main = () => {
 
     const [allPokemon, setAllPokemon] = useState([]);
     const [selectedPokemon, setSelectedPokemon] = useState([]);
+    const [totalPrice, setTotalPrice] = useState(0);
+
 
     useEffect(() => {
         fetch('./data.json')
@@ -17,8 +19,16 @@ const Main = () => {
 
 
     const handleAddToCart = (pokemon) => {
-        const newPokemon = ([...selectedPokemon, pokemon]);
-        setSelectedPokemon(newPokemon);
+        const isExist = selectedPokemon.find(item => item.id === pokemon.id);
+
+        if (isExist) {
+            return alert('Item already taken');
+        }
+        else {
+            const newPokemon = ([...selectedPokemon, pokemon]);
+            setTotalPrice(totalPrice);
+            setSelectedPokemon(newPokemon);
+        }
     }
 
 
@@ -32,7 +42,7 @@ const Main = () => {
                 <div className="flex flex-col md:flex-col lg:flex-row gap-10 px-3">
                     {/* cart container */}
                     <div className="w-full md:w-full lg:w-1/5">
-                        <Cart selectedPokemon={selectedPokemon}></Cart>
+                        <Cart selectedPokemon={selectedPokemon} totalPrice={totalPrice}></Cart>
                     </div>
 
 
