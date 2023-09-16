@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Cart = ({ selectedPokemon, totalPrice }) => {
+const Cart = ({ selectedPokemon, totalPrice, remaining }) => {
     return (
         <div className="bg-[url('/src/assets/images/card-bg.jpg')] bg-no-repeat bg-cover border-8 border-blue-300 p-4 sticky top-0">
             <div className="flex mb-5 justify-center">
@@ -15,7 +15,9 @@ const Cart = ({ selectedPokemon, totalPrice }) => {
 
             <div className="mt-5">
                 <p className="font-bold">Total Cards picked: {selectedPokemon.length} </p>
-                <p className="font-bold mb-5">Total Spending: ${totalPrice} </p>
+                <hr className='my-3' />
+                <p className="font-bold">Total Spending: ${totalPrice} </p>
+                <p className="font-bold mb-5">Remaining: ${remaining} </p>
             </div>
 
             <hr className='mb-5' />
@@ -44,6 +46,7 @@ const Cart = ({ selectedPokemon, totalPrice }) => {
 Cart.propTypes = {
     selectedPokemon: PropTypes.array.isRequired,
     totalPrice: PropTypes.number.isRequired,
+    remaining: PropTypes.number.isRequired,
 }
 
 export default Cart;

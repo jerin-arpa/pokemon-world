@@ -10,6 +10,7 @@ const Main = () => {
     const [allPokemon, setAllPokemon] = useState([]);
     const [selectedPokemon, setSelectedPokemon] = useState([]);
     const [totalPrice, setTotalPrice] = useState(0);
+    const [remaining, setRemaining] = useState(0);
 
 
     useEffect(() => {
@@ -21,6 +22,7 @@ const Main = () => {
 
     const handleAddToCart = (pokemon) => {
         const isExist = selectedPokemon.find(item => item.id === pokemon.id);
+        let spending = pokemon.price;
 
         if (isExist) {
             return Swal.fire({
@@ -31,8 +33,20 @@ const Main = () => {
             })
         }
         else {
+            selectedPokemon.forEach(item => {
+                spending += item.price;
+            })
+
+            const totalBalance = 100 - spending;
+
+            if (spending > 100) {
+                return Swal.fire('OPS!! You reach your limit');
+            }
+
+
             const newPokemon = ([...selectedPokemon, pokemon]);
-            setTotalPrice(totalPrice);
+            setRemaining(totalBalance);
+            setTotalPrice(spending);
             setSelectedPokemon(newPokemon);
         }
     }
@@ -48,7 +62,7 @@ const Main = () => {
                 <div className="flex flex-col md:flex-col lg:flex-row gap-10 px-3">
                     {/* cart container */}
                     <div className="w-full md:w-full lg:w-1/5">
-                        <Cart selectedPokemon={selectedPokemon} totalPrice={totalPrice}></Cart>
+                        <Cart selectedPokemon={selectedPokemon} totalPrice={totalPrice} remaining={remaining}></Cart>
                     </div>
 
 
@@ -58,7 +72,7 @@ const Main = () => {
                         {/* card */}
                         {
                             allPokemon.map(pokemon => (
-                                <div key={pokemon.id} className="text-sm bg-[url('/src/assets/images/card-bg.jpg')] border-8 border-blue-300 p-4 space-y-3">
+                                <div key={pokemon.id} className="text-sm bg-[url('/src/assets/images/card-bg.jpg')] border-8 border-blue-300 p-4 space-y-3 ">
                                     <img className="w-full" src={pokemon.url} alt="" />
 
                                     <div className="flex justify-between my-2">

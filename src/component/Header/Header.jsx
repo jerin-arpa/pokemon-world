@@ -8,7 +8,7 @@ const Header = () => {
                 <h3 className="text-xl font-bold text-center text-white my-2">Gotta catch em all!</h3>
                 <p className="text-center text-white mb-2">Build your pokemon army with all the greatest pokemon cards and win amazing prizes every week.</p>
 
-                <h2 className="text-2xl font-bold text-center text-white">Maximum Value: <span className='text-yellow-500'>$100</span></h2>
+                <h2 className="text-2xl font-bold text-center text-white">Maximum Balance: <span className='text-yellow-500'>$100</span></h2>
             </div>
         </div>
     );
