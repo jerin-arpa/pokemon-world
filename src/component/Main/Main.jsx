@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Header from "../Header/Header";
 import { useState } from "react";
+import { FaCrown } from 'react-icons/fa';
 
 const Main = () => {
 
@@ -47,20 +48,24 @@ const Main = () => {
                                     <img className="w-full" src={pokemon.url} alt="" />
 
                                     <div className="flex justify-between my-2">
-                                        <h3 className="font-bold text-lg">Sylveon V</h3>
-                                        <p className="font-bold text-lg">Hp: 310</p>
+                                        <h3 className="font-bold text-lg">{pokemon.name}</h3>
+                                        <p className="font-bold text-lg">Hp: {pokemon.hp}</p>
                                     </div>
 
-                                    <p><span className="font-bold">Ability:</span><span className="font-light"> Attach an Energy card from your hand to 1 of your Benched Pokémon. If you do, heal 120 damage from that Pokémon.</span></p>
+                                    <p><span className="font-bold">Ability:</span><span className="font-light"> {pokemon.ability}</span></p>
 
                                     <div className="flex">
                                         <p className="font-bold">Power:</p>
-                                        <progress className="w-full progress-warning h-5 ml-2" value="70" max="100"></progress>
+                                        <progress className="w-full progress-warning h-5 ml-2" value={pokemon.power} max="100"></progress>
                                     </div>
 
-                                    <p className="font-bold">Creator: Ryota Murayama </p>
+                                    <p className="font-bold">Creator: {pokemon.creator}</p>
 
-                                    <p className="font-bold">Price: $23.5</p>
+                                    <p className="font-bold">Price: ${pokemon.price}</p>
+
+                                    <div className="flex">
+                                        <button className="btn"><FaCrown className="text-yellow-500 text-lg"></FaCrown> Add to cart</button>
+                                    </div>
                                 </div>
                             ))
                         }
