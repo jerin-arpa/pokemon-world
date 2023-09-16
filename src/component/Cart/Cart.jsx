@@ -22,7 +22,7 @@ const Cart = ({ selectedPokemon, totalPrice, remaining }) => {
 
             <hr className='mb-5' />
 
-            <p className="font-bold mb-2 text-center">Selected Cart: </p>
+            <p className="font-bold mb-2 text-center">Selected Cart</p>
             <div className='font-bold'>
                 <div className='list-decimal flex flex-wrap  justify-center'>
                     {
