@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Sylveon V",
+        "hp": 310,
+        "ability": "Attach an Energy card from your hand to 1 of your Benched Pokémon. If you do, heal 120 damage from that Pokémon.",
+        "creator": "Ryota Murayama",
+        "price": 23.5,
+        "power": 100,
+        "url": "./images/image-1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Vee-Search",
+        "hp": 70,
+        "ability": "Search your deck for up to 3 Pokémon V, reveal them, and put them into your hand.",
+        "creator": "Atsushi Furusawa",
+        "price": 7,
+        "power": 55,
+        "url": "./images/image-2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Pokémon-EXch",
+        "hp": 170,
+        "ability": "Does 20 damage times the amount of Energy attached to this Pokémon and the Defending Pokémon.",
+        "creator": "Shizurowa",
+        "price": 10.5,
+        "power": 78,
+        "url": "./images/image-3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Giratina",
+        "hp": 130,
+        "ability": "If the Defending Pokémon is affected by a Special Condition, this attack does 50 more damage.",
+        "creator": "5ban Graphics",
+        "price": 9,
+        "power": 73,
+        "url": "./images/image-4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Mewtwo",
+        "hp": 120,
+        "ability": "As long as this Pokémon is your Active Pokémon, your opponent's Active Pokémon's attacks do 20 less damage.",
+        "creator": "Kouki Saitou",
+        "price": 8.5,
+        "power": 66,
+        "url": "./images/image-5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Nidoqueen",
+        "hp": 160,
+        "ability": "This attack does 50 more damage for each Evolution Pokémon on your Bench.",
+        "creator": "Midori Harada",
+        "price": 12.5,
+        "power": 74,
+        "url": "./images/image-6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Meowstic",
+        "hp": 90,
+        "ability": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon.",
+        "creator": "kirisAki",
+        "price": 8,
+        "power": 70,
+        "url": "./images/image-7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Zoroark",
+        "hp": 100,
+        "ability": "Search your deck for a card and put it into your hand. Shuffle your deck afterward.",
+        "creator": "Naoki Saito",
+        "price": 8.5,
+        "power": 72,
+        "url": "./images/image-8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Rayquaza V",
+        "hp": 320,
+        "ability": "His attack does 80 more damage for each card you discarded in this way.",
+        "creator": "PLANETA Mochizuki",
+        "price": 25,
+        "power": 100,
+        "url": "./images/image-9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Alolan Grimer",
+        "hp": 80,
+        "ability": "Flip a coin. If heads, discard an Energy attached to your opponent's Active Pokémon.",
+        "creator": "Naoki Saito",
+        "price": 7.5,
+        "power": 68,
+        "url": "./images/image-10.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Galarian Rapidash",
+        "hp": 100,
+        "ability": "Your Pokémon recover from all Special Conditions and can't be affected by any Special Conditions.",
+        "creator": "You Iribi",
+        "price": 9,
+        "power": 70,
+        "url": "./images/image-11.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Pokémon-V",
+        "hp": 220,
+        "ability": "Switch all damage counters on this Pokémon with those on your opponent’s Active Pokémon.",
+        "creator": "Ayaka Yoshida",
+        "price": 17.5,
+        "power": 88,
+        "url": "./images/image-12.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Pumpkaboo",
+        "hp": 60,
+        "ability": "Your opponent's Active Pokémon is now Confused.",
+        "creator": "5ban Graphics",
+        "price": 5,
+        "power": 35,
+        "url": "./images/image-13.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Samurott",
+        "hp": 140,
+        "ability": "Any damage done to this Pokémon by attacks is reduced by 20 .",
+        "creator": "5ban Graphics",
+        "price": 11.5,
+        "power": 62,
+        "url": "./images/image-14.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Litwick",
+        "hp": 50,
+        "ability": "Search your deck for a Basic Pokémon and put it onto your Bench. Shuffle your deck afterward.",
+        "creator": "Atsuko Nishida",
+        "price": 4,
+        "power": 30,
+        "url": "./images/image-15.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Keldeo-EX",
+        "hp": 170,
+        "ability": "Pokémon is on your Bench, you may switch this Pokémon with your Active Pokémon.",
+        "creator": "5ban Graphics",
+        "price": 13,
+        "power": 85,
+        "url": "./images/image-16.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Black Kyurem-EX",
+        "hp": 180,
+        "ability": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
+        "creator": "Eske Yoshinob",
+        "price": 16,
+        "power": 92,
+        "url": "./images/image-17.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Gardevoir-GX",
+        "hp": 230,
+        "ability": "When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards.",
+        "creator": "5ban Graphics",
+        "price": 21.5,
+        "power": 100,
+        "url": "./images/image-18.jpg"
+    }
+]
