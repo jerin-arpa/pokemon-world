@@ -29,7 +29,7 @@ const Main = () => {
             </header>
             <main className="container mx-auto my-8">
                 {/* container */}
-                <div className="flex flex-col md:flex-col lg:flex-row gap-5 px-3">
+                <div className="flex flex-col md:flex-col lg:flex-row gap-10 px-3">
                     {/* cart container */}
                     <div className="w-full md:w-full lg:w-1/5">
                         <Cart selectedPokemon={selectedPokemon}></Cart>
